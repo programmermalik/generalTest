@@ -1,0 +1,12 @@
+//ilke function
+//malik function
+function A () {
+
+
+
+
+
+
+
+
+}
