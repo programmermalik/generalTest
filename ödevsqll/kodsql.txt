@@ -1,0 +1,7 @@
+Select Meh, Mehmet From  Ýsim where Ýsim = "Mehmet"
+
+Select Eli, Elif From  Eli where Ýsim = "Elif"
+
+Select * From 2008 where Sýnýf != "3"
+
+Select Sýnýf Sayý From Sýnýf Sayý
