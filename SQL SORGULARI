@@ -1,0 +1,27 @@
+CREATE TABLE OKULKAYIT
+	(
+      `okulno` int, `isim` varchar(25), `soyisim` varchar(25),`sinif` varchar(25), `dogumtarihi` varchar(25), `okul` varchar(25)
+    );
+INSERT INTO OKULKAYIT
+	(`okulno`, `isim`, `soyisim`,`sinif`, `dogumtarihi`, `okul`)
+VALUES (1, 'Mehmet', 'Kaynak', '6/D', 2005, 'BRP'),(2, 'Mehdi', 'Altınbudak', '3/B', 2006, 'BRP'),(3, 'Mehmet Can', 'Turan', '8/A', 2003, 'BRP');
+
+   -------------------------------------
+-----------------BU TABLE'IM--------------------
+   -------------------------------------
+
+SELECT
+  isim,
+  soyisim
+FROM
+  OKULKAYIT
+ORDER BY 
+  dogumtarihi
+ WHERE 
+   sinif = 6/D,sinif = 3/B,sinif = 8/A
+ WHERE
+   isim = meh
+   
+   -------------------------------------
+  -------------BUDA SORGULARIM-----------
+   -------------------------------------
