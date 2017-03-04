@@ -44,3 +44,19 @@ FROM
 
 ORDER BY 
   dogumtarihi desc
+  
+  
+  # 3. sınıfta olmayan öğrencielri getirir
+  SELECT
+  isim,
+  soyisim,
+  sinif,
+  dogumtarihi
+FROM
+  OKULKAYIT
+
+ WHERE 
+  sinif NOT LIKE "3%"
+
+ORDER BY 
+  dogumtarihi desc;
