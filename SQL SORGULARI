@@ -61,3 +61,13 @@ FROM
   
 ORDER BY 
   dogumtarihi desc;
+  
+  
+  # sınıfa göre gruplama
+  
+  SELECT
+ sinif,count(*) as kisisayisi, avg (dogumtarihi), max(dogumtarihi),min(dogumtarihi), sum(dogumtarihi), 
+FROM
+  OKULKAYIT
+
+group by sinif
