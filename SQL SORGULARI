@@ -28,3 +28,19 @@ ORDER BY
    -------------------------------------
   -------------BUDA SORGULARIM-----------
    -------------------------------------
+   
+   # doğum tarihi 06 ile biten öürenciler
+   
+   SELECT
+  isim,
+  soyisim,
+  sinif,
+  dogumtarihi
+FROM
+  OKULKAYIT
+
+ WHERE 
+   dogumtarihi LIKE '%06%'
+
+ORDER BY 
+  dogumtarihi desc
