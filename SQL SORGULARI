@@ -12,15 +12,18 @@ VALUES (1, 'Mehmet', 'Kaynak', '6/D', 2005, 'BRP'),(2, 'Mehdi', 'Altınbudak', '
 
 SELECT
   isim,
-  soyisim
+  soyisim,
+  sinif,
+  dogumtarihi
 FROM
   OKULKAYIT
-ORDER BY 
-  dogumtarihi
+
  WHERE 
-   sinif = 6/D,sinif = 3/B,sinif = 8/A
- WHERE
-   isim = meh
+   sinif = "6/D" and isim = "Mehmet" or sinif = "3/B" and isim = "Mehdi"
+
+ORDER BY 
+  dogumtarihi desc
+   
    
    -------------------------------------
   -------------BUDA SORGULARIM-----------
