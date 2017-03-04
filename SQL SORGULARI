@@ -56,7 +56,8 @@ FROM
   OKULKAYIT
 
  WHERE 
-  sinif NOT LIKE "3%"
-
+  sinif NOT LIKE "3%" and
+  dogumtarihi <= 2003 
+  
 ORDER BY 
   dogumtarihi desc;
