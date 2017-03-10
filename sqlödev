@@ -1,0 +1,15 @@
+CREATE TABLE isimkayit
+	(`soyisim` varchar(25), `soyisim2` varchar(25), `soyisim3` varchar(25));
+  
+INSERT INTO isimkayit
+	(`soyisim`, `soyisim2`, `soyisim3`)
+VALUES (1,`Kaynak`),(2,`Kavak`),(3,`Tibet`);
+
+SELECT
+  soyisim,
+  soyisim2,
+  soyisim3,
+FROM
+  isimkayit
+WHERE
+  soyisim LIKE 'Ka_ak' or soyisim LIKE '%Ka%' or soyisim LIKE '%ak%;
